@@ -1,10 +1,12 @@
 import "./styles/App.css";
+import EndPage from './components/EndPage';
+
 
 function App() {
   return (
     <>
+    <EndPage />
       <div>
-        <h1>Team 3</h1>
       </div>
     </>
   );

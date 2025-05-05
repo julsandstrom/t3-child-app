@@ -12,6 +12,6 @@ function App() {
       <Route path="/" element={<EndPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-
-
+)
+}
 export default App;

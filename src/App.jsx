@@ -1,13 +1,12 @@
 import "./styles/App.css";
-import EndPage from './components/EndPage';
-
+import EndPage from "./pages/EndPage";
+import StartPage from "./pages/StartPage";
 
 function App() {
   return (
     <>
-    <EndPage />
-      <div>
-      </div>
+      <StartPage />
+      <div></div>
     </>
   );
 }

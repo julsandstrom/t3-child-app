@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import EndPage from './components/EndPage';
 import { BrowserRouter as Router, Routes ,Route} from "react-router-dom";
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
           <Route path="/alternative" element={<AnimalCard/>}></Route>
         </Routes>
       </Router>
+    <EndPage />
+
       <div>
-        <h1>Team 3</h1>
       </div>
     </>
   );

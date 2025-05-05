@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+.end-page{
+    background-image: url("../assets/bakgrund.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: black;    
+}
+
+.text-wrapper {
+    padding-top: 10%;    
+}
+
+h1{
+    font-size: 70px;
+}
+
+p{
+    font-size: 30px;
+}
+
+.djur-ikoner img{
+    height: auto;
+    max-width: 300px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.confetti {
+    width: 100%;
+    pointer-events: none;
+}

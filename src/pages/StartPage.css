@@ -113,30 +113,131 @@
 }
 
 /* -------------------- @MEDIA QUERYS -------------------- */
+
+@media (max-width: 2300px) {
+
+  .hanging-monkey {
+    top: -84px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 255px;
+  }
+
+  .corner-zebra {
+    left: -37px;
+  }
+
+
+  .corner-parrot {
+    position: absolute;
+    top: 30px;
+    right: -33px;
+  }
+
+  .game-name img {
+    width: 1400px;
+  }
+
+  .start-sign-button {
+    bottom: -43px;
+    right: 90px;
+  }
+
+  .start-sign-button img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 2000px) {
+
+  .hanging-monkey {
+    top: -80px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 235px;
+  }
+
+  .corner-zebra {
+    left: -34px;
+  }
+
+
+  .corner-parrot {
+    right: -31px;
+  }
+
+  .game-name img {
+    width: 1350px;
+  }
+
+  .start-sign-button {
+    bottom: -40px;
+  }
+
+  .start-sign-button img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1800px) {
+
+  .hanging-monkey {
+    top: -77px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 215px;
+  }
+
+  .corner-zebra {
+    left: -32px;
+  }
+
+
+  .corner-parrot {
+    right: -27px;
+  }
+
+  .game-name img {
+    width: 1300px;
+  }
+
+  .start-sign-button {
+    bottom: -35px;
+  }
+
+  .start-sign-button img {
+    width: 300px;
+  }
+}
+
 @media (max-width: 1400px) {
 
   .hanging-monkey {
     top: -67px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 185px;
   }
 
   .corner-zebra {
     left: -25px;
   }
-  .corner-zebra img {
-    width: 185px;
-  }
+
 
   .corner-parrot {
-    position: absolute;
-    top: 30px;
     right: -20px;
-  }
-  .corner-parrot img {
-    width: 185px;
   }
 
   .game-name img {
@@ -145,7 +246,6 @@
 
   .start-sign-button {
     bottom: -25px;
-    right: 90px;
   }
 
   .start-sign-button img {
@@ -159,24 +259,18 @@
     top: -57px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 165px;
   }
 
   .corner-zebra {
     left: -25px;
   }
-  .corner-zebra img {
-    width: 165px;
-  }
 
   .corner-parrot {
-    position: absolute;
-    top: 30px;
     right: -20px;
-  }
-  .corner-parrot img {
-    width: 165px;
   }
 
   .game-name img {
@@ -185,7 +279,6 @@
 
   .start-sign-button {
     bottom: -25px;
-    right: 90px;
   }
 
   .start-sign-button img {
@@ -199,22 +292,18 @@
     top: -50px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 150px;
   }
 
   .corner-zebra {
     left: -25px;
   }
-  .corner-zebra img {
-    width: 150px;
-  }
 
   .corner-parrot {
     top: 10px;
-  }
-  .corner-parrot img {
-    width: 150px;
   }
 
   .game-name img {
@@ -238,19 +327,14 @@
     left: 100px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 140px;
   }
 
   .corner-zebra {
     left: -25px;
-  }
-  .corner-zebra img {
-    width: 140px;
-  }
-
-  .corner-parrot img {
-    width: 140px;
   }
 
   .game-name img {
@@ -273,20 +357,16 @@
     top: -50px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 130px;
   }
 
   .corner-zebra {
     left: -25px;
   }
-  .corner-zebra img {
-    width: 130px;
-  }
 
-  .corner-parrot img {
-    width: 130px;
-  }
 
   .game-name img {
     width: 550px;
@@ -307,19 +387,14 @@
     top: -50px;
   }
 
-  .hanging-monkey img {
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
     width: 120px;
   }
 
   .corner-zebra {
     left: -25px;
-  }
-  .corner-zebra img {
-    width: 120px;
-  }
-
-  .corner-parrot img {
-    width: 120px;
   }
 
   .game-name img {
@@ -334,4 +409,5 @@
     width: 120px;
   }
 }
+
 

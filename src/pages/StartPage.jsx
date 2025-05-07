@@ -4,7 +4,11 @@ import StartSign from "../assets/startpage/Sign-start.png";
 import hangingMonkey from "../assets/startpage/monkey-hanging.png";
 import cornerZebra from "../assets/startpage/zebra-corner.png";
 import cornerParrot from "../assets/startpage/side-parrot.png";
+import { useNavigate } from "react-router-dom";
+
 const StartPage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="start-page">
@@ -20,7 +24,10 @@ const StartPage = () => {
         <div className="game-name">
           <img src={lillaDjurVarlden} alt="Lilla Djurvärlden" />
         </div>
-        <button className="start-sign-button">
+        <button
+          onClick={() => navigate("/quizcards")}
+          className="start-sign-button"
+        >
           <img src={StartSign} alt="Starta spelet" />
         </button>
       </div>

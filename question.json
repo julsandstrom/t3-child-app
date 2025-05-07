@@ -1,0 +1,62 @@
+[
+  {
+    "image": "https://pixabay.com/illustrations/chat-cat-black-animal-black-cat-2043685/",
+    "question": "Vilket djur är det här?",
+    "options": ["Katt", "Ko", "Gris"],
+    "correctAnswer": "Katt"
+  },
+  {
+    "image": "https://pixabay.com/illustrations/dog-cartoon-puppy-cute-dog-7447595/",
+    "question": "Vilket djur ser du här?",
+    "options": ["Hund", "Får", "Kanin"],
+    "correctAnswer": "Hund"
+  },
+  {
+    "image": "https://pixabay.com/illustrations/bear-grizzly-drawing-art-forest-6619415/",
+    "question": "Vad heter det här djuret?",
+    "options": ["Björn", "Får", "Lejon"],
+    "correctAnswer": "Björn"
+  },
+  {
+    "image": "https://pixabay.com/vectors/cow-animal-livestock-farm-1501690/",
+    "question": "Vilket djur är det?",
+    "options": ["Ko", "Elefant", "Mus"],
+    "correctAnswer": "Ko"
+  },
+  {
+    "image": "https://pixabay.com/illustrations/sheep-animal-cartoon-farm-wool-5012930/",
+    "question": "Vad heter djuret?",
+    "options": ["Får", "Zebra", "Ko"],
+    "correctAnswer": "Får"
+  },
+  {
+    "image": "https://pixabay.com/vectors/camel-desert-animal-nature-5777454/",
+    "question": "Vilket djur är det här?",
+    "options": ["Kamel", "Häst", "Katt"],
+    "correctAnswer": "Kamel"
+  },
+  {
+    "image": "https://pixabay.com/vectors/lion-cartoon-wildlife-mammal-2024588/",
+    "question": "Vad är det här för djur?",
+    "options": ["Lejon", "Björn", "Hund"],
+    "correctAnswer": "Lejon"
+  },
+  {
+    "image": "https://pixabay.com/vectors/elephant-wildlife-animal-cute-4797194/",
+    "question": "Vad heter det här djuret?",
+    "options": ["Elefant", "Ko", "Får"],
+    "correctAnswer": "Elefant"
+  },
+  {
+    "image": "https://pixabay.com/vectors/mouse-animal-cute-cartoon-mammal-4779394/",
+    "question": "Vilket djur ser du här?",
+    "options": ["Mus", "Hund", "Zebra"],
+    "correctAnswer": "Mus"
+  },
+  {
+    "image": "https://pixabay.com/vectors/zebra-mammal-animal-cartoon-8096659/",
+    "question": "Vad är det här för djur?",
+    "options": ["Zebra", "Kamel", "Får"],
+    "correctAnswer": "Zebra"
+  }
+]

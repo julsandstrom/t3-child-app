@@ -11,12 +11,15 @@ const EndPage = () => {
       <Confetti className="confetti" />
 
       <div className="text-wrapper">
-        <h1>Bra jobbat!</h1>
-        <p>Du klarade det!</p>
+        <h1>Bra jobbat!
+            <br/>
+          Du klarade det!
+        </h1>
+      
       </div>
 
-      <button className="back-button" onClick={() => navigate("/")}>
-        Gå tillbaka
+      <button className="spela-igen" onClick={() => navigate("/")}>
+       Spela igen
       </button>
 
       <div className="djur-ikoner">

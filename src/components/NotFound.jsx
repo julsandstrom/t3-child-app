@@ -15,7 +15,6 @@ const NotFound = () => {
         <h1>404</h1>
         <p>Sidan kunde inte hittas</p>
       </div>
-
       <button className="back-button" onClick={() => navigate('/')}>
         Gå tillbaka
       </button>

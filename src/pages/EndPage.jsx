@@ -1,7 +1,7 @@
 import React from 'react'
 import Confetti from 'react-confetti';
 import djurikoner from '../assets/djurikoner.png';
-import './EndPage.css';
+import "../styles/EndPage.css";
 import { useNavigate } from 'react-router-dom';
 
 const EndPage = () => {

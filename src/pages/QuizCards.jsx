@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 import bird from "../assets/gamepictures/bird.jpg";
 import dog from "../assets/gamepictures/dog.jpg";
 import cat from "../assets/gamepictures/cat.jpg"; 
 import '../styles/QuizCards.css';
 
 const QuizCards = () => {
+  const navigate = useNavigate();
+
+  // När man klickar på rätt svar (hunden)
+  const handleCorrectClick = () => {
+    navigate("/endpage");
+  };
+
 return (
     <div className="quiz-cards">
     <div className="text-wrapper">
@@ -16,8 +24,8 @@ return (
         <img src={bird} alt="bird" />
       </div>
 
-      <div className="correct">
-        <img src={dog} alt="dog" />
+      <div className="correct" onClick={handleCorrectClick}> 
+        <img src={dog} alt="dog"/>
       </div>
 
       <div className="wrong">

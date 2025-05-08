@@ -1,4 +1,4 @@
-import "./StartPage.css";
+import "../styles/StartPage.css";
 import lillaDjurVarlden from "../assets/startpage/Lilla-Djurvarlden.png";
 import StartSign from "../assets/startpage/Sign-start.png";
 import hangingMonkey from "../assets/startpage/monkey-hanging.png";

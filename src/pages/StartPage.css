@@ -1,0 +1,413 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+    transform-origin: top center;
+  }
+
+  50% {
+    transform: rotate(-5deg);
+    transform-origin: top center;
+  }
+
+  100% {
+    transform: rotate(5deg);
+    transform-origin: top center;
+  }
+}
+
+.start-page {
+  position: relative;
+  background-image: url("../assets/startpage/jungel-backgrund.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100%;
+}
+
+.hanging-monkey {
+  position: absolute;
+  top: -110px;
+  left: 200px;
+}
+
+.hanging-monkey img {
+  width: 300px;
+  max-width: 45vw;
+  height: auto;
+  animation: swing 2s infinite ease-in-out;
+}
+
+.corner-zebra {
+  position: absolute;
+  bottom: 0;
+  left: -45px;
+}
+.corner-zebra img {
+  width: 300px;
+  max-width: 45vw;
+  height: auto;
+}
+
+.corner-parrot {
+  position: absolute;
+  top: 200px;
+  right: -45px;
+}
+.corner-parrot img {
+  width: 300px;
+  max-width: 45vw;
+  height: auto;
+}
+
+.game-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vw;
+  text-align: center;
+}
+
+.game-name img {
+  width: 1500px;
+  max-width: 90vw;
+  height: auto;
+}
+
+.start-sign-button {
+  position: absolute;
+  bottom: -45px;
+  right: 40px;
+  margin: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.start-sign-button img {
+  width: 400px;
+  max-width: 45vw;
+  height: auto;
+  animation: pulsate 1.5s infinite ease-in-out;
+  transition: transform 0.2s ease;
+}
+
+.start-sign-button:hover img {
+  animation: none;
+  transform: scale(1.05);
+}
+
+/* -------------------- @MEDIA QUERYS -------------------- */
+
+@media (max-width: 2300px) {
+
+  .hanging-monkey {
+    top: -84px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 255px;
+  }
+
+  .corner-zebra {
+    left: -37px;
+  }
+
+
+  .corner-parrot {
+    position: absolute;
+    top: 30px;
+    right: -33px;
+  }
+
+  .game-name img {
+    width: 1400px;
+  }
+
+  .start-sign-button {
+    bottom: -43px;
+    right: 90px;
+  }
+
+  .start-sign-button img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 2000px) {
+
+  .hanging-monkey {
+    top: -80px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 235px;
+  }
+
+  .corner-zebra {
+    left: -34px;
+  }
+
+
+  .corner-parrot {
+    right: -31px;
+  }
+
+  .game-name img {
+    width: 1350px;
+  }
+
+  .start-sign-button {
+    bottom: -40px;
+  }
+
+  .start-sign-button img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1800px) {
+
+  .hanging-monkey {
+    top: -77px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 215px;
+  }
+
+  .corner-zebra {
+    left: -32px;
+  }
+
+
+  .corner-parrot {
+    right: -27px;
+  }
+
+  .game-name img {
+    width: 1300px;
+  }
+
+  .start-sign-button {
+    bottom: -35px;
+  }
+
+  .start-sign-button img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1400px) {
+
+  .hanging-monkey {
+    top: -67px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 185px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+
+  .corner-parrot {
+    right: -20px;
+  }
+
+  .game-name img {
+    width: 900px;
+  }
+
+  .start-sign-button {
+    bottom: -25px;
+  }
+
+  .start-sign-button img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .hanging-monkey {
+    top: -57px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 165px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+  .corner-parrot {
+    right: -20px;
+  }
+
+  .game-name img {
+    width: 800px;
+  }
+
+  .start-sign-button {
+    bottom: -25px;
+  }
+
+  .start-sign-button img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .hanging-monkey {
+    top: -50px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 150px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+  .corner-parrot {
+    top: 10px;
+  }
+
+  .game-name img {
+    width: 700px;
+  }
+
+  .start-sign-button {
+    bottom: -25px;
+    right: 70px;
+  }
+
+  .start-sign-button img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .hanging-monkey {
+    top: -50px;
+    left: 100px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 140px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+  .game-name img {
+    width: 600px;
+  }
+
+  .start-sign-button {
+    right: 80px;
+  }
+
+  .start-sign-button img {
+    width: 140px;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .hanging-monkey {
+    top: -50px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 130px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+
+  .game-name img {
+    width: 550px;
+  }
+
+  .start-sign-button {
+    right: 80px;
+  }
+
+  .start-sign-button img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .hanging-monkey {
+    top: -50px;
+  }
+
+  .hanging-monkey img,
+  .corner-zebra img,
+  .corner-parrot img {
+    width: 120px;
+  }
+
+  .corner-zebra {
+    left: -25px;
+  }
+
+  .game-name img {
+    width: 500px;
+  }
+
+  .start-sign-button {
+    right: 80px;
+  }
+
+  .start-sign-button img {
+    width: 120px;
+  }
+}
+
+

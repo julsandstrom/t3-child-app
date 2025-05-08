@@ -44,11 +44,12 @@
   left: 200px;
 }
 
-.hanging-monkey img {
+.hanging-monkey img{
   width: 300px;
   max-width: 45vw;
   height: auto;
   animation: swing 2s infinite ease-in-out;
+  cursor: pointer;
 }
 
 .corner-zebra {
@@ -60,6 +61,7 @@
   width: 300px;
   max-width: 45vw;
   height: auto;
+  cursor: pointer;
 }
 
 .corner-parrot {
@@ -71,6 +73,7 @@
   width: 300px;
   max-width: 45vw;
   height: auto;
+  cursor: pointer;
 }
 
 .game-name {

@@ -1,0 +1,53 @@
+[
+    {
+      "question": "Björn",
+      "options": ["björn.jpg", "katt.jpg", "ko.jpeg"],
+      "answer": "björn.jpg"
+    },
+    {
+      "question": "katt",
+      "options": ["ko.jpeg", "katt.jpg", "kanin.jpg"],
+      "answer": "katt.jpg"
+    },
+    {
+      "question": "giraff",
+      "options": ["giraff.jpg", "lejon.jpg", "rav.jpg"],
+      "answer": "giraff.jpg"
+    },
+    {
+      "question": "Lejon",
+      "options": ["fisk.jpg", "björn.jpg", "lejon.jpg"],
+      "answer": "lejon.jpg"
+    },
+    {
+      "question": "Rav",
+      "options": ["rav.jpg", "hund.jpg", "fisk.jpg"],
+      "answer": "rav.jpg"
+    },
+    {
+      "question": "Kamel",
+      "options": ["ko.jpeg", "rav.jpg", "kamel.jpg"],
+      "answer": "kamel.jpg"
+    },
+    {
+      "question": "Kanin",
+      "options": ["lejon.jpg", "kanin.jpg", "kamel.jpg"],
+      "answer": "kanin.jpg"
+    },
+    {
+      "question": "Fisk",
+      "options": ["kanin.jpg", "ko.jpeg", "fisk.jpg"],
+      "answer": "fisk.jpg"
+    },
+    {
+      "question": "Get",
+      "options": ["kamel.jpg", "get.jpg", "giraff.jpg"],
+      "answer": "get.jpg"
+    },
+    {
+      "question": "Mus",
+      "options": ["mus.jpg", "hund.jpg", "ko.jpeg"],
+      "answer": "mus.jpg"
+    }
+  ]
+  

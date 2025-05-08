@@ -3,7 +3,6 @@ import StartPage from "./pages/StartPage";
 import EndPage from "./pages/EndPage";
 import NotFound from "./pages/NotFound";
 import { Routes, Route } from "react-router-dom";
-// import AnimalCard from "./components/AnimalCard";
 import QuizCards from "./pages/QuizCards";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<StartPage />} />
       <Route path="/quizcards" element={<QuizCards />} />
-      <Route path="/end" element={<EndPage />} />
+      <Route path="/endpage" element={<EndPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

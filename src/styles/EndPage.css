@@ -50,3 +50,21 @@ p{
     width: 100%;
     pointer-events: none;
 }
+.back-button {
+    background-color: #f50bd6;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px 36px; 
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    max-width: 90%;
+  }
+  
+  .back-button:hover {
+    background-color: #c006d9;
+  }
+  

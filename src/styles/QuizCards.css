@@ -1,82 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.quiz-cards{
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #fef9f4;
+}
+
+.quiz-cards {
     background-image: url("../assets/bakgrund.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    padding: 10px;
 }
 
 .text-wrapper{
-    text-align: center;   
+    text-align: center;
+    margin-top: 20px;   
+    margin-bottom: 80px;
 }
 
 .text-wrapper h1{
     display: inline-block;
     background-color: #cbc749; 
     color: #fbfbfb;
-    padding: 25px 40px;
+    padding: 20px 35px;
     border-radius: 30px;
     font-size: 65px;
     font-weight: bold;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-    font-family: "Baloo 2", "Comic Sans MS", cursive, sans-serif;
-    margin-bottom: 90px; 
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 120px; 
     text-align: center;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    margin-top: 60px
 }
 
 .cards-container > div {
-    background-color: #c0c652;
-    border-radius: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 15px;
     width: 90%;
     max-width: 320px;
-    transition: transform 0.2s;
+    height: 250px; 
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding: 0;
 }
 
 .cards-container img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 .cards-container > div:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
 }
 
 .cards-container > div.correct {
-    border: 4px solid #4CAF50;
-    background-color: #d8fcd4;
+    border: 8px solid #43a047; 
+    box-shadow: 0 0 12px rgba(67, 160, 71, 0.6);
     animation: pop 0.3s ease-in-out;
 }
 
 .cards-container > div.wrong {
-    border: 4px solid #F44336;
-    background-color: #ffe1e1;
+    border: 8px solid #e53935; 
+    box-shadow: 0 0 12px rgba(67, 160, 71, 0.6);
     animation: shake 0.3s ease-in-out;
 }
 
 .cards-container > div:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) rotate(-1deg);
     cursor: pointer;
 }
-
 /* RESPONSIV */
 @media (min-width: 768px) {
     .cards-container > div {

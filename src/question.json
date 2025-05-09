@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "question": "Björn",
+      "options": ["björn.webp", "katt.avif", "Ko.webp"],
+      "answer": "björn.webp"
+    },
+    {
+      "id": 2,
+      "question": "Katt",
+      "options": ["Ko.webp", "katt.avif", "kanin.jpg"],
+      "answer": "katt.avif"
+    },
+    {
+      "id": 3,
+      "question": "Giraff",
+      "options": ["giraff.webp", "Kamel.webp", "räv.webp"],
+      "answer": "giraff.webp"
+    },
+    {
+      "id": 4,
+      "question": "Lejon",
+      "options": ["fisk.webp", "björn.webp", "lion.webp"],
+      "answer": "lion.webp"
+    },
+    {
+      "id": 5,
+      "question": "Räv",
+      "options": ["räv.webp", "hund.webp", "fisk.webp"],
+      "answer": "räv.webp"
+    },
+    {
+      "id": 6,
+      "question": "Kamel",
+      "options": ["Ko.webp", "räv.webp", "Kamel.webp"],
+      "answer": "Kamel.webp"
+    },
+    {
+      "id": 7,
+      "question": "Kanin",
+      "options": ["lion.webp", "kanin.jpg", "Kamel.webp"],
+      "answer": "kanin.jpg"
+    },
+    {
+      "id": 8,
+      "question": "Fisk",
+      "options": ["kanin.jpg", "Ko.webp", "fisk.webp"],
+      "answer": "fisk.webp"
+    },
+    {
+      "id": 9,
+      "question": "Get",
+      "options": ["Kamel.webp", "get.webp", "giraff.webp"],
+      "answer": "get.webp"
+    },
+    {
+      "id": 10,
+      "question": "Mus",
+      "options": ["mus.webp", "hund.webp", "Ko.webp"],
+      "answer": "mus.webp"
+    }
+  ]
+  

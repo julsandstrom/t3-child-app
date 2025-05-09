@@ -1,101 +1,147 @@
-*{
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes swing {
+    0% { transform: rotate(5deg); transform-origin: top center; }
+    50% { transform: rotate(-5deg); transform-origin: top center; }
+    100% { transform: rotate(5deg); transform-origin: top center; }
+  }
+  
+  @keyframes slide-left {
+    0% { transform: translateX(6px); }
+    50% { transform: translateX(-6px); }
+    100% { transform: translateX(6px); }
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body, #root {
+  }
+  
+  html, body, #root {
     height: 100%;
-    overflow: hidden;
     font-family: 'Comic Neue', sans-serif;
-}
-
-.end-page{
-    background-image: url("../assets/bakgrund.png");
+    overflow: hidden;
+  }
+  
+  .end-page {
+    position: relative;
+    background-image: url("../assets/startpage/jungel-backgrund.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    height: 100vh;    
+    height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    color: black;    
-}
-
-.text-wrapper {
-    padding-top: 10%;    
-}
-
-h1{
-    font-size: 70px;
-}
-
-p{
-    font-size: 30px;
-}
-
-.djur-ikoner img{
+  }
+  
+  .hanging-monkey {
+    position: absolute;
+    top: -110px;
+    left: 200px;
+  }
+  
+  .hanging-monkey img {
+    width: 300px;
+    max-width: 45vw;
     height: auto;
-    max-width: 300px;
-    margin-left: 50px;
-    margin-top: 100px;
-}
-
-.confetti {
+    animation: swing 2s infinite ease-in-out;
+  }
+  
+  .corner-zebra {
+    position: absolute;
+    bottom: 0;
+    left: -45px;
+  }
+  
+  .corner-zebra img {
+    width: 300px;
+    max-width: 45vw;
+    height: auto;
+  }
+  
+  .corner-parrot {
+    position: absolute;
+    top: 200px;
+    right: -45px;
+  }
+  
+  .corner-parrot img {
+    width: 300px;
+    max-width: 45vw;
+    height: auto;
+  }
+  
+  .confetti {
     width: 100%;
     pointer-events: none;
-}
-.spela-igen {
-    background-color: #f955af;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 16px 36px; 
+  }
+  
+  .text-wrapper {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .bra-jobbat-animation {
+    animation: slide-left 2s infinite ease-in-out;
+  }
+  
+  .bra-jobbat-animation img {
+    width: 500px;
+    max-width: 90vw;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .play-again-button {
+    position: absolute;
+    bottom: -45px;
+    right: 40px;
+    background: none;
     border: none;
-    border-radius: 14px;
+    padding: 0;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-    max-width: 90%;
   }
   
-  .spela-igen:hover {
-    background-color: #fb02c9;
+  .play-again-button img {
+    width: 300px;
+    max-width: 45vw;
+    height: auto;
+    display: block;
+    animation: pulsate 1.5s infinite ease-in-out;
+    transition: transform 0.2s ease;
   }
+  
+  .play-again-button:hover img {
+    animation: none;
+    transform: scale(1.05);
+  }
+  
   @media (max-width: 390px) {
-    .end-page {
-      padding: 20px;
-      height: auto;
-      min-height: 100vh;
+    .hanging-monkey img,
+    .corner-zebra img,
+    .corner-parrot img {
+      width: 180px;
     }
   
-    .text-wrapper {
-      padding-top: 40px;
+    .corner-parrot {
+      top: 100px;
     }
   
-    h1 {
-      font-size: 38px;
-    }
-  
-    p {
-      font-size: 17px;
-    }
-  
-    .djur-ikoner img {
-      max-width: 200px;
-      margin: 40px auto 0;
-    }
-  
-    .spela-igen {
-      font-size: 15px;
-      padding: 12px 18px;
-      width: 100%;
+    .bra-jobbat-animation img {
       max-width: 260px;
+      width: 100%;
+    }
+  
+    .play-again-button img {
+      max-width: 180px;
     }
   }
   

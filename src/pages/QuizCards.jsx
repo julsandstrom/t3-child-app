@@ -4,12 +4,18 @@ import bird from "../assets/gamepictures/bird.jpg";
 import dog from "../assets/gamepictures/dog.jpg";
 import cat from "../assets/gamepictures/cat.jpg";
 import "../styles/QuizCards.css";
+import correctSound from "../assets/sounds/sonido-correcto-331225.mp3"
 
 const QuizCards = () => {
   const navigate = useNavigate();
 
   const handleCorrectClick = () => {
-    navigate("/endpage");
+    const correctAudio = new Audio(correctSound);
+    correctAudio.play();
+    setTimeout(()=>{
+        navigate("/endpage");
+    },1000);
+ 
   };
 
   return (

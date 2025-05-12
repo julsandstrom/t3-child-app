@@ -1,28 +1,28 @@
-import björn from "../images-json/björn.webp";
+import björn from "../images-json/bjorn.png";
 import elefant from "../images-json/elefant.webp";
 import fisk from "../images-json/fisk.webp";
 import get from "../images-json/get.webp";
 import giraff from "../images-json/giraff.webp";
 import hund from "../images-json/hund.webp";
 import kamel from "../images-json/Kamel.webp";
-import kanin from "../images-json/kanin.jpg";
-import katt from "../images-json/katt.avif";
-import ko from "../images-json/Ko.webp";
+import kanin from "../images-json/kanin.png";
+import katt from "../images-json/katt.png";
+import ko from "../images-json/ko.png";
 import lejon from "../images-json/lion.webp";
 import mus from "../images-json/mus.webp";
 import räv from "../images-json/räv.webp";
 
 export const imageMap = {
-    "björn.webp": björn,
+    "bjorn.png": björn,
     "elefant.webp": elefant,
     "fisk.webp": fisk,
     "get.webp": get,
     "giraff.webp": giraff,
     "hund.webp": hund,
     "Kamel.webp": kamel,
-    "kanin.jpg": kanin,
-    "katt.avif": katt,
-    "Ko.webp": ko,
+    "kanin.png": kanin,
+    "katt.png": katt,
+    "ko.png": ko,
     "lion.webp": lejon,
     "mus.webp": mus,
     "räv.webp": räv,

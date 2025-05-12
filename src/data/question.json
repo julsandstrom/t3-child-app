@@ -2,14 +2,14 @@
     {
       "id": 1,
       "question": "Björn",
-      "options": ["björn.webp", "katt.avif", "Ko.webp"],
-      "answer": "björn.webp"
+      "options": ["bjorn.png", "katt.png", "ko.png"],
+      "answer": "bjorn.png"
     },
     {
       "id": 2,
       "question": "Katt",
-      "options": ["Ko.webp", "katt.avif", "kanin.jpg"],
-      "answer": "katt.avif"
+      "options": ["ko.png", "katt.png", "kanin.png"],
+      "answer": "katt.png"
     },
     {
       "id": 3,
@@ -20,7 +20,7 @@
     {
       "id": 4,
       "question": "Lejon",
-      "options": ["fisk.webp", "björn.webp", "lion.webp"],
+      "options": ["fisk.webp", "bjorn.png", "lion.webp"],
       "answer": "lion.webp"
     },
     {
@@ -32,19 +32,19 @@
     {
       "id": 6,
       "question": "Kamel",
-      "options": ["Ko.webp", "räv.webp", "Kamel.webp"],
+      "options": ["ko.png", "räv.webp", "Kamel.webp"],
       "answer": "Kamel.webp"
     },
     {
       "id": 7,
       "question": "Kanin",
-      "options": ["lion.webp", "kanin.jpg", "Kamel.webp"],
-      "answer": "kanin.jpg"
+      "options": ["lion.webp", "kanin.png", "Kamel.webp"],
+      "answer": "kanin.png"
     },
     {
       "id": 8,
       "question": "Fisk",
-      "options": ["kanin.jpg", "Ko.webp", "fisk.webp"],
+      "options": ["kanin.png", "ko.png", "fisk.webp"],
       "answer": "fisk.webp"
     },
     {
@@ -56,7 +56,7 @@
     {
       "id": 10,
       "question": "Mus",
-      "options": ["mus.webp", "hund.webp", "Ko.webp"],
+      "options": ["mus.webp", "hund.webp", "ko.png"],
       "answer": "mus.webp"
     }
   ]

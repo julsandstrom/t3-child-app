@@ -1,4 +1,3 @@
-import "../styles/StartPage.css";
 import lillaDjurVarlden from "../assets/startpage/Lilla-Djurvarlden.png";
 import StartSign from "../assets/startpage/Sign-Start.png";
 import hangingMonkey from "../assets/startpage/monkey-hanging.png";
@@ -7,6 +6,7 @@ import cornerParrot from "../assets/startpage/side-parrot.png";
 import monkeySound from "../assets/startpage/Monkey.mp3";
 import zebraSound from "../assets/startpage/zebra.mp3";
 import parrotSound from "../assets/startpage/Parrot.mp3";
+import "../styles/StartPage.css";
 import { useNavigate } from "react-router-dom";
 
 const StartPage = () => {

@@ -1,59 +1,39 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import bird from "../assets/gamepictures/bird.jpg";
-import dog from "../assets/gamepictures/dog.jpg";
-import cat from "../assets/gamepictures/cat.jpg";
+import useQuiz from "../hooks/quizFunction";
+import { imageMap } from "../utils/imageMap";
 import "../styles/QuizCards.css";
 
 const QuizCards = () => {
-  const navigate = useNavigate();
+  const { currentQuestion, handleImageClick, selectedImage } = useQuiz();
 
-  const handleCorrectClick = () => {
-    navigate("/endpage");
-  };
-
+  if (!currentQuestion) return <div>Laddar fråga...</div>;
   return (
     <div className="quiz-cards">
       <div className="text-wrapper">
-        <h1>Hund</h1>
+        <h1>{currentQuestion.question}</h1>
       </div>
 
       <div className="cards-container">
-        <div className="wrong">
-          <div className="wooden-sign">
-            <img src={bird} alt="bird" />
+        {currentQuestion.options.map((option, index) => (
+          <div
+            key={index}
+            className={`card-option ${
+              selectedImage === option
+                ? option === currentQuestion.answer
+                  ? "correct"
+                  : "wrong"
+                : ""
+            }`}
+            onClick={() => handleImageClick(option)}
+          >
+            <div className="wooden-sign">
+              <img src={imageMap[option]} alt={`option-${index}`} />
+            </div>
           </div>
-        </div>
-
-        <div className="correct" onClick={handleCorrectClick}>
-          <div className="wooden-sign">
-            <img src={dog} alt="dog" />
-          </div>
-        </div>
-
-        <div className="wrong">
-          <div className="wooden-sign">
-            <img src={cat} alt="cat" />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
-{
-  /* <div className="cards-container">
-            <div className='first-card'>
-                <img src={bird} alt='bird'></img>
-            </div>
-
-            <div className='second-card'>
-                <img src={dog} alt='dog'></img>
-            </div>
-
-            <div className='third-card'>
-                <img src={cat} alt='cat'></img>
-            </div>
-        </div> */
-}
 
 export default QuizCards;

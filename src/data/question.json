@@ -14,25 +14,25 @@
     {
       "id": 3,
       "question": "Giraff",
-      "options": ["giraff.webp", "Kamel.webp", "räv.webp"],
+      "options": ["giraff.webp", "Kamel.webp", "rav.png"],
       "answer": "giraff.webp"
     },
     {
       "id": 4,
       "question": "Lejon",
-      "options": ["fisk.webp", "bjorn.png", "lion.webp"],
+      "options": ["fisk.png", "bjorn.png", "lion.webp"],
       "answer": "lion.webp"
     },
     {
       "id": 5,
       "question": "Räv",
-      "options": ["räv.webp", "hund.webp", "fisk.webp"],
-      "answer": "räv.webp"
+      "options": ["rav.png", "hund.png", "fisk.png"],
+      "answer": "rav.png"
     },
     {
       "id": 6,
       "question": "Kamel",
-      "options": ["ko.png", "räv.webp", "Kamel.webp"],
+      "options": ["ko.png", "rav.png", "Kamel.webp"],
       "answer": "Kamel.webp"
     },
     {
@@ -44,8 +44,8 @@
     {
       "id": 8,
       "question": "Fisk",
-      "options": ["kanin.png", "ko.png", "fisk.webp"],
-      "answer": "fisk.webp"
+      "options": ["kanin.png", "ko.png", "fisk.png"],
+      "answer": "fisk.png"
     },
     {
       "id": 9,
@@ -56,8 +56,8 @@
     {
       "id": 10,
       "question": "Mus",
-      "options": ["mus.webp", "hund.webp", "ko.png"],
-      "answer": "mus.webp"
+      "options": ["mus.png", "hund.png", "ko.png"],
+      "answer": "mus.png"
     }
   ]
   

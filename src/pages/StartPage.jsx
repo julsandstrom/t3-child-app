@@ -8,15 +8,13 @@ import zebraSound from "../assets/startpage/zebra.mp3";
 import parrotSound from "../assets/startpage/Parrot.mp3";
 import "../styles/StartPage.css";
 import { useNavigate } from "react-router-dom";
-import { speakAnimalName } from "../utils/tts"; // 🔊 Importera TTS
 
 const StartPage = () => {
   const navigate = useNavigate();
 
-  const playSoundAndSpeak = (soundFile, animalName) => {
+  const playSound = (soundFile) => {
     const audio = new Audio(soundFile);
     audio.play();
-    speakAnimalName(animalName); // 🔊 Läser upp namnet
   };
 
   return (
@@ -26,21 +24,21 @@ const StartPage = () => {
           <img
             src={hangingMonkey}
             alt="Hängande apa"
-            onClick={() => playSoundAndSpeak(monkeySound, "Apa")}
+            onClick={() => playSound(monkeySound)}
           />
         </div>
         <div className="corner-zebra">
           <img
             src={cornerZebra}
             alt="Glad Zebra"
-            onClick={() => playSoundAndSpeak(zebraSound, "Zebra")}
+            onClick={() => playSound(zebraSound)}
           />
         </div>
         <div className="corner-parrot">
           <img
             src={cornerParrot}
             alt="Glad Papegoja"
-            onClick={() => playSoundAndSpeak(parrotSound, "Papegoja")}
+            onClick={() => playSound(parrotSound)}
           />
         </div>
         <div className="game-name">

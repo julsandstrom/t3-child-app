@@ -20,6 +20,14 @@ const useQuiz = () => {
   const wrongSound = new Audio(wrongSoundFile);
 
   useEffect(() => {
+    const shuffled = shuffleArray(questions).map((q) => ({
+      ...q,
+      options: shuffleArray(q.options),
+    }));
+    setShuffledQuestions(shuffled);
+  }, []);
+
+  useEffect(() => {
     if (!shuffledQuestions.length) return;
 
     const current = shuffledQuestions[currentQuestionIndex];
@@ -30,14 +38,6 @@ const useQuiz = () => {
       audio.play();
     }
   }, [currentQuestionIndex, shuffledQuestions]);
-
-  useEffect(() => {
-    const shuffled = shuffleArray(questions).map((q) => ({
-      ...q,
-      options: shuffleArray(q.options),
-    }));
-    setShuffledQuestions(shuffled);
-  }, []);
 
   const handleImageClick = (option) => {
     if (!isClickable) return;

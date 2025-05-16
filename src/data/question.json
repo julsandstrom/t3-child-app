@@ -2,60 +2,71 @@
     {
       "id": 1,
       "question": "Björn",
+      "readQuestion": "hittaBjornen.mp3",
       "options": ["bjorn.png", "katt.png", "ko.png"],
       "answer": "bjorn.png"
+
     },
     {
       "id": 2,
       "question": "Katt",
+      "readQuestion": "hittaKatten.mp3",
       "options": ["ko.png", "katt.png", "kanin.png"],
       "answer": "katt.png"
     },
     {
       "id": 3,
       "question": "Giraff",
+      "readQuestion": "hittaGiraffen.mp3",
       "options": ["giraff.webp", "Kamel.webp", "rav.png"],
       "answer": "giraff.webp"
     },
     {
       "id": 4,
       "question": "Lejon",
+      "readQuestion": "hittaLejonet.mp3",
       "options": ["fisk.png", "bjorn.png", "lion.webp"],
       "answer": "lion.webp"
     },
     {
       "id": 5,
       "question": "Räv",
+      "readQuestion": "hittaRaven.mp3",
       "options": ["rav.png", "hund.png", "fisk.png"],
       "answer": "rav.png"
     },
     {
       "id": 6,
       "question": "Kamel",
+      "readQuestion": "hittaKamelen.mp3",
       "options": ["ko.png", "rav.png", "Kamel.webp"],
       "answer": "Kamel.webp"
     },
     {
       "id": 7,
       "question": "Kanin",
+      "readQuestion": "hittaKaninen.mp3",
       "options": ["lion.webp", "kanin.png", "Kamel.webp"],
       "answer": "kanin.png"
     },
     {
       "id": 8,
       "question": "Fisk",
+      "readQuestion": "hittaFisken.mp3",
       "options": ["kanin.png", "ko.png", "fisk.png"],
       "answer": "fisk.png"
     },
     {
       "id": 9,
       "question": "Get",
+      "readQuestion": "hittaGeten.mp3",
       "options": ["Kamel.webp", "get.webp", "giraff.webp"],
       "answer": "get.webp"
     },
     {
       "id": 10,
       "question": "Mus",
+      "readQuestion": "hittaMusen.mp3",
       "options": ["mus.png", "hund.png", "ko.png"],
       "answer": "mus.png"
     }

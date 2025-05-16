@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import questions from "../data/question.json";
 import correctSoundFile from "../assets/sounds/correct.mp3";
 import wrongSoundFile from "../assets/sounds/wrong.mp3";
+import { questionSoundMap } from "../utils/questionSoundMap";
 
 const shuffleArray = (array) => {
   return [...array].sort(() => Math.random() - 0.5);
@@ -17,6 +18,18 @@ const useQuiz = () => {
 
   const correctSound = new Audio(correctSoundFile);
   const wrongSound = new Audio(wrongSoundFile);
+
+  useEffect(() => {
+    if (!shuffledQuestions.length) return;
+
+    const current = shuffledQuestions[currentQuestionIndex];
+    const soundSrc = questionSoundMap[current.readQuestion];
+
+    if (soundSrc) {
+      const audio = new Audio(soundSrc);
+      audio.play();
+    }
+  }, [currentQuestionIndex, shuffledQuestions]);
 
   useEffect(() => {
     const shuffled = shuffleArray(questions).map((q) => ({

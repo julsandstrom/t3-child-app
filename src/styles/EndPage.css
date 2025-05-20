@@ -72,7 +72,7 @@ body,
   z-index: 0;
 }
 
-.text-wrapper {
+.text-wrapper-end {
   position: absolute;
   top: 15%;
   left: 50%;
@@ -82,6 +82,9 @@ body,
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
+
+  padding: 0;
 }
 
 .bra-jobbat-animation {

@@ -26,17 +26,16 @@ body {
 
 .text-wrapper {
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 450px;
 }
 
 .text-wrapper h1 {
   color: #ffffff;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 600;
   font-family: "Fredoka One", cursive;  
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
-  margin-bottom: 5px;
 }
 
 /* SKYLTSTIL */
@@ -130,10 +129,10 @@ body {
 
 /* RESPONSIVT */
 /* För mobiler */
-@media (min-width: 380px) and (max-width: 767px) {
+@media (min-width: 380px) and (max-width: 844px) {
   .text-wrapper h1 {
     font-size: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .wooden-sign {
@@ -157,7 +156,7 @@ body {
   .text-wrapper h1 {
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .wooden-sign {
@@ -175,7 +174,7 @@ body {
 @media (max-height: 600px) and (orientation: landscape) {
   .text-wrapper h1 {
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 380px;
   }
 
   .wooden-sign {
@@ -198,7 +197,7 @@ body {
 @media (min-width: 1024px) {
   .text-wrapper h1 {
     font-size: 85px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .cards-container > div {

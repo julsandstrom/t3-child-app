@@ -9,10 +9,6 @@ const QuizCards = () => {
   if (!currentQuestion) return <div>Laddar fråga...</div>;
   return (
     <div className="quiz-cards">
-      <div className="text-wrapper">
-        <h1>{currentQuestion.question}</h1>
-      </div>
-
       <div className="cards-container">
         {currentQuestion.options.map((option, index) => (
           <div
@@ -32,6 +28,10 @@ const QuizCards = () => {
           </div>
         ))}
       </div>
+      
+        <div className="text-wrapper">
+          <h1>{currentQuestion.question}</h1>
+        </div>
     </div>
   );
 };

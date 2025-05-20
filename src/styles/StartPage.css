@@ -152,6 +152,36 @@
     width: 340px ;
   }
 }
+@keyframes periodic-shake {
+  0%, 78% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  85% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(4deg);
+  }
+  95% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+ }
+ 
+ 
+ .corner-parrot img {
+  animation: periodic-shake 10s infinite;
+ }
+ .corner-zebra img {
+  animation: periodic-shake 10s infinite;
+  animation-delay: 5s;
+ }
+ 
 
 @media (max-width: 2000px) {
 

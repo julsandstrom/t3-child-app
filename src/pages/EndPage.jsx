@@ -14,21 +14,21 @@ const EndPage = () => {
   useEffect(() => {
     const kids = new Audio(kidsSound);
     const trumpet = new Audio(trumpetSound);
-    
-    kids.play().catch(err => console.log("Ljudfel:", err));
 
-     // Börja fade out efter 2.5 sekunder
+    kids.play().catch((err) => console.log("Ljudfel:", err));
+
+    // Börja fade out efter 2.5 sekunder
     setTimeout(() => {
       let volume = 1;
       const fadeOut = setInterval(() => {
         volume = Math.max(0, volume - 0.1);
         kids.volume = volume;
-        
+
         if (volume === 0) {
           clearInterval(fadeOut);
           kids.pause();
           kids.currentTime = 0;
-          trumpet.play().catch(err => console.log("Ljudfel:", err));
+          trumpet.play().catch((err) => console.log("Ljudfel:", err));
         }
       }, 80);
     }, 2500);
@@ -39,12 +39,12 @@ const EndPage = () => {
       trumpet.pause();
     };
   }, []);
-    
+
   return (
     <div className="end-page">
       <Confetti className="confetti" />
 
-      <div className="text-wrapper">
+      <div className="text-wrapper-end">
         <div className="bra-jobbat-animation">
           <img src={braJobbat} alt="Bra jobbat - Du klarade det!" />
         </div>

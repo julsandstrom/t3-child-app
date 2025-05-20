@@ -4,21 +4,23 @@ const BakgrundsLjud = () => {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    const audio = audioRef.current;
+    const handleUserInteraction = () => {
+      const audio = audioRef.current;
+      if (audio) {
+        audio.volume = 0.1;
+        audio.loop = true;
+        audio.play().catch((error) => {
+          console.warn("Ljud kunde inte spelas:", error);
+        });
+      }
 
-    if (audio) {
-      audio.volume = 0.1;
-      audio.loop = true;
+      window.removeEventListener("click", handleUserInteraction);
+    };
 
-      audio.play().catch((error) => {
-        console.warn("Ljudet kan ej spelas:", error);
-      });
-    }
+    window.addEventListener("click", handleUserInteraction);
 
     return () => {
-      if (audio) {
-        audio.pause();
-      }
+      window.removeEventListener("click", handleUserInteraction);
     };
   }, []);
 

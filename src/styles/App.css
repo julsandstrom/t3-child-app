@@ -4,3 +4,23 @@
   margin: 0;
   padding: 0;
 }
+
+.rotate-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.info-text {
+  font-size: 32px;
+  text-align: center;
+  padding: 1rem 2rem;
+
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}

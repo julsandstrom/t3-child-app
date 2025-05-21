@@ -128,7 +128,7 @@ body,
   .play-again-button {
     right: 20%;
     transform: translateX(50%);
-    bottom: 0px;
+    bottom: 7%;
   }
 
   .play-again-button img {

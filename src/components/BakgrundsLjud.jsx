@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import bakgrundsLjud from "../assets/sounds/bakgrundsljud.mp3";
 
 const BakgrundsLjud = () => {
   const audioRef = useRef(null);
@@ -26,7 +27,7 @@ const BakgrundsLjud = () => {
 
   return (
     <div>
-      <audio ref={audioRef} src="/bakgrundsljud.mp3" />
+      <audio ref={audioRef} src={bakgrundsLjud} />
     </div>
   );
 };

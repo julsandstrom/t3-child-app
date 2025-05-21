@@ -28,10 +28,10 @@ const QuizCards = () => {
           </div>
         ))}
       </div>
-      
-        <div className="text-wrapper">
-          <h1>{currentQuestion.question}</h1>
-        </div>
+
+      <div className="text-wrapper">
+        <h1>{currentQuestion.question}</h1>
+      </div>
     </div>
   );
 };

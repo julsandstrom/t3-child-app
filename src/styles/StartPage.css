@@ -362,11 +362,12 @@
   .start-page .hanging-monkey img,
   .start-page .corner-zebra img,
   .start-page .corner-parrot img {
-    width: 140px ;
+    width: 110px !important;
   }
 
   .start-page .corner-zebra {
     left: -25px ;
+    bottom: 15%;
   }
 
   .start-page .game-name img {
@@ -375,6 +376,7 @@
 
   .start-page .start-sign-button {
     right: 80px ;
+    bottom: 5%;
   }
 
   .start-page .start-sign-button img {
@@ -427,6 +429,7 @@
 
   .start-page .corner-zebra {
     left: -25px ;
+    bottom: 7%;
   }
 
   .start-page .game-name img {
@@ -434,7 +437,8 @@
   }
 
   .start-page .start-sign-button {
-    right: 80px ;
+    right: 5%;
+    bottom: 5%;
   }
 
   .start-page .start-sign-button img {
